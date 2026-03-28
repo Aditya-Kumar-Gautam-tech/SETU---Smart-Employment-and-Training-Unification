@@ -1,0 +1,6 @@
+fastapi                 # The web framework for the API
+uvicorn[standard]       # The server that runs your API
+python-multipart        # Required by FastAPI for file uploads
+sentence-transformers   # For semantic analysis
+scikit-learn            # For cosine similarity
+PyMuPDF                 # To read and parse PDF text (fast!)

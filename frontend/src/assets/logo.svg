@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 120" width="100%" height="100%">
+  <defs>
+    <linearGradient id="pathGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#4F46E5" /> <stop offset="50%" stop-color="#9333EA" /> <stop offset="100%" stop-color="#E11D48" /> </linearGradient>
+    
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="3" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+
+  <path d="M 85 25 
+           L 50 25 
+           C 20 25, 20 65, 50 65 
+           L 70 65 
+           C 100 65, 100 105, 70 105 
+           L 35 105" 
+        fill="none" 
+        stroke="url(#pathGradient)" 
+        stroke-width="12" 
+        stroke-linecap="round" 
+        stroke-linejoin="round" />
+
+  <circle cx="85" cy="25" r="9" fill="#4F46E5" filter="url(#glow)"/>
+  <circle cx="85" cy="25" r="4" fill="#FFFFFF" />
+
+  <circle cx="60" cy="65" r="7" fill="#FFFFFF" stroke="#9333EA" stroke-width="3" />
+
+  <circle cx="35" cy="105" r="9" fill="#E11D48" filter="url(#glow)"/>
+  <circle cx="35" cy="105" r="4" fill="#FFFFFF" />
+
+  <text 
+    x="125" 
+    y="75" 
+    font-family="system-ui, -apple-system, sans-serif" 
+    font-size="52" 
+    font-weight="900" 
+    fill="#111827" 
+    letter-spacing="1">
+    SETU
+  </text>
+  
+  <text 
+    x="130" 
+    y="98" 
+    font-family="system-ui, -apple-system, sans-serif" 
+    font-size="11" 
+    font-weight="700" 
+    fill="#6B7280" 
+    letter-spacing="4">
+    INTELLIGENT MATCHING
+  </text>
+</svg>

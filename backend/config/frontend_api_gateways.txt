@@ -1,0 +1,50 @@
+Frontend API Gateways
+
+Base backend route groups
+- /auth/
+- /resume/
+- /discovery/
+
+Authentication APIs
+- POST /auth/signup/
+  Purpose: Register a new user
+
+- POST /auth/login/
+  Purpose: Login with email and password
+
+- POST /auth/oauth/google/
+  Purpose: Login/signup with Google OAuth token
+
+- GET /auth/me/
+  Purpose: Fetch the currently authenticated user
+  Auth: Bearer token required
+
+Resume APIs
+- POST /resume/upload/
+  Purpose: Upload a resume PDF and trigger resume parsing
+  Auth: Bearer token required
+
+- GET /resume/skills/
+  Purpose: Fetch the latest parsed resume skills and verified skills
+  Auth: Bearer token required
+
+- POST /resume/verify-skills/
+  Purpose: Save user-verified skills for the latest uploaded resume
+  Auth: Bearer token required
+
+Discovery / Recommendation APIs
+- POST /discovery/recommendations/
+  Purpose: Get role-based resume improvement suggestions
+  Auth: Bearer token required
+  Request fields:
+  - target_role
+  - job_description (optional)
+
+Frontend Notes
+- Base local backend URL will typically be: http://127.0.0.1:8000
+- JWT auth is configured with Bearer tokens
+- CORS currently allows: http://localhost:8080
+
+Planned Future API
+- /parsing/
+  Purpose: Can later expose parser-only APIs if the frontend needs direct parsing status or parsed output endpoints
