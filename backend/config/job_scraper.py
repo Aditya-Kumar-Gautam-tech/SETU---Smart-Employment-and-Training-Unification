@@ -3,8 +3,8 @@ import json
 import re
 
 # Add your Adzuna credentials here
-APP_ID = 'ee2f6d45'
-APP_KEY = 'd91a7d3ef8215a925a5bc64853507af0'
+APP_ID = 'Enter APP ID'
+APP_KEY = 'Enter API KEY'
 
 # Your Skills
 USER_SKILLS = ['AI', 'web scraping', 'api', 'automation', 'data', 'gen ai']
